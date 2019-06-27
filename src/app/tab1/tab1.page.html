@@ -2,10 +2,10 @@
   <ion-toolbar color="primary">
   <ion-segment  [(ngModel)]="whichsegment">
     <ion-segment-button value="receive">
-      <ion-label > Receive gifts </ion-label>
+      <ion-label > Receive payments </ion-label>
     </ion-segment-button>
     <ion-segment-button value="messages">
-      <ion-label > Messages </ion-label>
+      <ion-label > Contracts </ion-label>
     </ion-segment-button>
   </ion-segment>
   </ion-toolbar>
@@ -45,7 +45,7 @@
     <ion-card class="datainput">
       <ion-card-header>
       <ion-card-title>
-     Receive Gift from payment message
+     Receive payment from payment message
       </ion-card-title>
       </ion-card-header>
       <ion-card-content >
@@ -60,7 +60,7 @@
          <ion-label position="stacked"> Enter Unlock PIN below </ion-label>
          <ion-input  [(ngModel)]="revertible.pin" placeholder="Enter Unlock PIN "></ion-input>
            </ion-item>
-      <ion-button fill="clear" size="small" color="primary" (click)="consumetestnetmessage()"> Accept gifts </ion-button>
+      <ion-button fill="clear" size="small" color="primary" (click)="consumetestnetmessage()"> Accept payment </ion-button>
 
       </ion-card-content>
     </ion-card>
@@ -131,7 +131,7 @@
 
     <ion-item *ngFor="let msg of receivedmessages" >
           <ion-label  text-wrap>
-            <h3> Greeting :          {{msg.message}} </h3>
+            <h3> ContractId :          {{msg.message}} </h3>
             <h3> Message:          {{msg.message}} </h3>
             <h4> To address:          {{msg.target}} </h4>
             <p>

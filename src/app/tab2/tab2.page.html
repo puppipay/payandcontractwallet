@@ -7,10 +7,10 @@
 
   <ion-segment  [(ngModel)]="whichtransaction">
     <ion-segment-button value="senttransactions">
-      <ion-label > Gift Sent </ion-label>
+      <ion-label > Payment Sent </ion-label>
     </ion-segment-button>
     <ion-segment-button value="receivedtransactions">
-      <ion-label > Gift Received </ion-label>
+      <ion-label > Payment Received </ion-label>
     </ion-segment-button>
   </ion-segment>
   </ion-toolbar>
@@ -27,7 +27,7 @@
 
     <ion-item *ngFor="let msg of senttransactions" >
           <ion-label  text-wrap>
-            <h3> Greeting:          {{msg.fromaddress}} </h3>
+            <h3> Contract id:          {{msg.fromaddress}} </h3>
             <h3> From Address:          {{msg.fromaddress}} </h3>
             <h4> To Address:          {{msg.toaddress}}
   </h4>
@@ -35,7 +35,7 @@
           Txid: {{msg.txid }}
             </p>
             <p>
-          Gifted Amount: {{msg.amount }}
+          Payment Amount: {{msg.amount }}
             </p>
        </ion-label>
     </ion-item>
@@ -48,7 +48,7 @@
 
     <ion-item *ngFor="let msg of receivedtransactions" >
           <ion-label  text-wrap>
-            <h3> Greeting :          {{msg.fromaddress}} </h3>
+            <h3> Contract id :          {{msg.fromaddress}} </h3>
             <h3> From Address:          {{msg.fromaddress}} </h3>
             <h4> To Address:          {{msg.toaddress}}
   </h4>
@@ -56,7 +56,7 @@
           Txid: {{msg.txid }}
             </p>
             <p>
-          Gifted Amount: {{msg.amount }}
+          Payment Amount: {{msg.amount }}
             </p>
        </ion-label>
     </ion-item>
