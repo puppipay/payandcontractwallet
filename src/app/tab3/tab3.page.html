@@ -10,7 +10,7 @@
       <ion-label > Contract & Pay </ion-label>
     </ion-segment-button>
     <ion-segment-button value="messages">
-      <ion-label > Contracts </ion-label>
+      <ion-label > Aggrements </ion-label>
     </ion-segment-button>
   </ion-segment>
   </ion-toolbar>
@@ -23,12 +23,12 @@
   <ion-card >
       <ion-card-content >
        <ion-item>
-         <ion-label position="stacked"> Contract to make </ion-label>
-         <ion-input  [(ngModel)]="toaddress" placeholder="Contract id "></ion-input>
+         <ion-label position="stacked"> Aggrement to make </ion-label>
+         <ion-input  [(ngModel)]="toaddress" placeholder="Aggrement id "></ion-input>
        </ion-item>
        <ion-item>
-         <ion-label position="stacked"> Contract document hash </ion-label>
-         <ion-input  [(ngModel)]="toaddress" placeholder="Contract document hash "></ion-input>
+         <ion-label position="stacked"> Aggrement document hash </ion-label>
+         <ion-input  [(ngModel)]="toaddress" placeholder="Aggrement document hash "></ion-input>
        </ion-item>
     </ion-card-content >
   </ion-card >
@@ -83,14 +83,14 @@
     <ion-card class="datainput">
       <ion-card-header>
       <ion-card-title>
-     Message/PIN to access contract fund
+     Aggrement contract /PIN to access contract fund
       </ion-card-title>
       </ion-card-header>
       <ion-card-content >
             <ion-item>
-         <ion-label position="stacked"> Message </ion-label>
+         <ion-label position="stacked"> Contract </ion-label>
             <ion-textarea rows="4" text-wrap type="text" [(ngModel)]="issued.message"
-                 placeholder=" Message "></ion-textarea>
+                 placeholder=" Contract "></ion-textarea>
             </ion-item>
 
 
@@ -101,7 +101,7 @@
 
       <ion-item *ngIf="issued.fullredeemurl">
          <ion-label position="stacked"> FullRedeem sharable link </ion-label>
-         <ion-input  [(ngModel)]="issued.fullredeemurl" placeholder="Place to display revertible address"></ion-input>
+         <ion-input  [(ngModel)]="issued.fullredeemurl" placeholder="Place to display contract address"></ion-input>
       </ion-item >
 
       </ion-card-content>
@@ -121,8 +121,8 @@
 
     <ion-item *ngFor="let msg of sendingmessages" >
           <ion-label  text-wrap>
-            <h3> Contract id:          {{msg.message}} </h3>
-            <h3> Message:          {{msg.message}}
+            <h3> Aggrement id:          {{msg.message}} </h3>
+            <h3> Contract:          {{msg.message}}
   </h3>
             <h4> Contract Address:          {{msg.address}}
   </h4>

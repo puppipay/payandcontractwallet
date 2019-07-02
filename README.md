@@ -1,2 +1,2 @@
 # greetgiftwallet
-Greet and Gift DASH Wallet
+Aggrement contract and Payment DASH Wallet
